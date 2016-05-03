@@ -1,123 +1,91 @@
 <!DOCTYPE html>
-<html >
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
 
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
 
-    
-    
-    
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Mypage by harshitgoelpage</title>
   </head>
 
   <body>
-hoiiijgdfut
-    <nav class="navbar navbar-default navbar-fixed-top hidden-xs">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav" id="menu">
-      <li data-menuanchor="Page1" class="active hvr-underline-from-center"><a href="#page1">Home</a></li>
-      <li data-menuanchor="Page2" class="hvr-underline-from-center"><a href="#page2">About</a></li>
-      <li data-menuanchor="Page3" class="hvr-underline-from-center"><a href="#page3">Projects</a></li>
-      <li data-menuanchor="Page4" class="hvr-underline-from-center"><a href="#page4">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+    <a id="forkme_banner" href="https://github.com/harshitgoelpage/mypage">View on GitHub</a>
+    <div class="shell">
 
-<div id="fullpage">
-  <div class="section" id="home">
-    <div class="container">
-      <div class="profile animated fadeInUp">
-        <img class="img-circle  center-block profile-pic" src="data:image/jpeg;base64,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" alt="profile-pic">
-        <h1 class="text-center myname">Harshit Goel<br><small class="short">@twitter address</small><br><small> A 21 year old kind of programmer, learning new technologies and programming techniques.</small></h1>
-      </div>
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Mypage</h1>
+            <h2>profile </h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/harshitgoelpage/mypage/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/harshitgoelpage/mypage/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/harshitgoelpage">harshitgoelpage</a> can be found on <a href="https://github.com/harshitgoelpage/mypage">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
     </div>
-  </div>
 
-  <div class="section" id="about">
-    <div class="row-fluid">
-      <div class="col-md-12">
-        <div class="intro">
-          <h1 class="header">More About Me !</h1>
-          <hr></hr>
-          <p class="desc">I'm an fat developer, with extensive practical experience in bakchodi strategy, creative direction and project management; devoted to Functional Programming and Information Architecture. Also a huge fan of semantics and futuristic interfaces.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="container">
-      <div class="row jumbotron" id="projects">
-        <div class="col-md-6">
-          <img class="img-responsive center-block" src="http://i.imgur.com/h5xcgu5.png" alt="nikola" width=350 height=350 style="padding-left:10px;" />
-          <a href="#dummy link" target="blank"><h3 class="text-center">some project<h3></a>
-        </div>
-        <div class="col-md-6 center-block" style="margin-left: 0px; padding-left: 106px;">
-          <img class="img-responsive" src="http://i.imgur.com/JccFU8O.png" alt="2048" width=350 height=350 />
-          <a href="#dummy link" target="blank"><h3 class="text-center">another project</h3></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section fp-auto-height" id="contact">
-    <footer class="footer-distributed">
-
-      <div class="footer-left">
-
-        <h3>My Profile  <span>harshitgoel.me</span></h3>
-
-        <p class="footer-links">
-          <a href="#page1">Home</a> ·
-          <a href="#page2">About</a> ·
-          <a href="#page3">Projects</a> ·
-          <a href="#page4">Contact</a>
-        </p>
-
-        <p class="footer-company-name">xeon zolt&copy; 2016</p>
-
-        <div class="footer-icons">
-
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
-
-        </div>
-
-      </div>
-
-      <div class="footer-right">
-
-        <p>Contact Me</p>
-
-        <form action="#" method="post">
-
-          <input type="text" name="email" placeholder="Email" />
-          <textarea name="message" placeholder="Message"></textarea>
-          <button>Send</button>
-
-        </form>
-
-      </div>
-
-    </footer>
-  </div>
-</div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js'></script>
-
-        <script src="js/index.js"></script>
-
-    
-    
     
   </body>
 </html>
